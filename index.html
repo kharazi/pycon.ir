@@ -1,0 +1,343 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="pycon 2013 - Iran Tehran">
+    <meta name="description" content="python conferance iran tehran 2013">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <meta property="og:url" content="http://pycon.ir">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:title" content="Python Conference 2013 - Tehran Iran">
+    <meta property="og:site_name" content="Pycon">
+    <meta property="og:description" content="python conferance iran tehran 2013">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="pycon2013.min.css" type="text/css" />
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>Python Conference 2013 - Tehran Iran</title>
+</head>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+  $('a').click(function(){
+    var gotop=$.attr(this, 'href');
+    $('html, body').animate({
+        scrollTop: $(   gotop).offset().top
+    }, 500 , function(){
+           location.href= gotop;
+    });
+    return false;
+});
+    var href=location.href;
+    var e=href.split("#");
+    if(e[1]!=null){
+                    $('html, body').animate({
+        scrollTop: $( '#'+e[1]).offset().top +40
+    }, 1600);
+
+   }
+      var $w = $(window);
+        var $sidebar = $(".sidebar");
+        var fixed = false;
+        $w.scroll(function() {
+            if ($w.scrollTop() > 40) {
+                if (fixed) return;
+                $sidebar.addClass("fixed");
+                fixed = true;
+            } else {
+                $sidebar.removeClass("fixed");
+                fixed = false;
+            }
+        });
+});
+</script>
+<body id="pycon-page">
+
+<div class="wrapper">
+
+    <header class="top-bar" id='pyconhome'>
+      <!--  <div class="attribution">Pycon</div> -->
+
+        <div class="share">
+            <a class="social-icons twitter" target="_blank" id="twitter-share"
+               href="https://twitter.com/"></a>
+            <a class="social-icons facebook" target="_blank" id="facebook-share"
+               href="https://www.facebook.com/"></a>
+            <a class="social-icons google" target="_blank" id="google-share"
+               href="https://plus.google.com/"></a>
+        </div>
+    </header>
+
+    <div>
+
+    <aside class="sidebar">
+      
+        <div class="logo">
+               <a  href="#pyconhome">
+            <img src="logo.png" width="274"
+                 alt="Pycon Conference 2013 - Iran Tehran" title="Pycon Conference 2013 - Iran Tehran"/>  </a>
+            <h1>Connecting The Python Community<br><br> Tehran - Iran</h1>
+        </div>
+      
+        <nav class="video-links">
+            <a class="link blue" href="#speakers">
+                <div class="bar"></div>
+                <h3>سخنرانان کنفرانس</h3>
+            </a>
+            <a class="link green" href="#commitee">
+                <div class="bar"></div>
+                <h3>کمیته علمی</h3>
+            </a>
+            <a class="link orange" href="#time-data">
+                <div class="bar"></div>
+                <h3>زمان بندی</h3>
+            </a>
+            <a class="link purple" href="#place-data">
+                <div class="bar"></div>
+                <h3>زمان و مکان </h3>
+            </a>
+            <a class="link teal" href="#map-data">
+                <div class="bar"></div>
+                <h3>نقشه</h3>
+            </a>
+            <a class="link gray" href="#test-data">
+                <div class="bar"></div>
+                <h3>حامیان</h3>
+            </a>
+        </nav>
+    </aside>
+
+    <section class="content">
+        <header class="main"  >
+            <h2>اولین کنفرانس پایتون ایران ۲۰۱۳</h2>
+            <p>
+                               ۵ سالی هست که عده ای از طرفداران پایتون در ایران تصمیم داشتند تا اولین کنفرانس پایتون ایران را برگزار کنند که بنا به دلایلی هیچ گاه مقدور نشد تا این که امسال به همت دوستان تمامی مقدمات برگزاری اولین کنفرانس pycon ایران فراهم شد.
+            </p>
+            <p>
+
+در این کنفرانس هر کس می‌تواند هر گونه مطلبی که به هر صورت به زبان برنامه نویسی پایتون مربوط باشد ارایه کند تنها یک محدودیت وجود دارد و آن هم کمبود زمان است در نتیجه هیئتی از اساتید محترم دانشگاهی و برنامه نویسان قدیمی پایتون در ایران مطالب را بررسی و چند مطلب را برای ارایه انتخاب می‌کنند، این انتخاب‌ها ملاک خوب و بد بودن سطح علمی مطالب نیست بلکه تنها تشخیص هیئت داوران جهت ارائه در کنفرانس می‌باشد.
+
+            </p>
+
+        </header>
+
+        <div class="section-box">
+            <header class="blue" id="speakers">
+                <h3>سخنرانان کنفرانس</h3>
+                <h4>در این کنفرانس هر کس می‌تواند هر گونه مطلبی که به هر صورت به زبان برنامه نویسی پایتون مربوط باشد را ارایه کند</h4>
+            </header>
+            <div class="background speaker-1">
+                <div class="description">
+                    <h5>
+                      چرا شما سخنران نباشید؟
+                    </h5>
+                    <p>
+			کنفرانس پایتون برنامه‌ایست برای کاربران پایتون از طرف کاربران پایتون. یک موضوع انتخاب کنید و تا ۷ آبان ماه اسلایدهای‌تان را بسازید.
+			مقاله و اسلاید های‌تان را ارسال کنید به:
+<br/>			info [ -aT -] pycon [--DoT] ir
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-box">
+            <header class="green" id="commitee" >
+                <h3>کمیته علمی</h3>
+                <h4>مطالب ارسالی توسط گروهی از اساتید برتر ایران بررسی و از بین آن‌ها بهترین مقالات جهت ارائه سخنرانی برگزیده می‌شوند</h4>
+            </header>
+            <div class="background commitee-1">
+ 			<table width="100%" style="margin-top:2.5%;margin-bottom:2.5%;">
+				<tbody>
+					<tr>
+						<td width="70%" class="tbc">
+							<p align="right" dir="RTL">
+								<span dir="RTL" style="color:#ffffff;font-size: 20px;">
+دکتر مرتضی آنالويی
+								</span>
+								<br/>
+								<span dir="RTL">
+دانشیار و عضو هیات علمی دانشکده کامپیوتر دانشگاه علم‌و‌صنعت ایران
+								</span>
+								<br/>
+								<span dir="RTL">
+متخصص در مهندسي ارتباطات و کامپيوتر
+								</span>
+							</p>
+						</td>
+
+						<td width="20%" style="padding-left:2.5%;">
+							<img src="Dranaluyi2.jpg" style="width:100%;height:auto;">
+							</img>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tbc">
+							<p align="right" dir="RTL">
+								<span dir="RTL" style="color:#ffffff;font-size: 20px;">
+دکتر عادل رحمانی
+								</span>
+								<br/>
+								<span dir="RTL">
+استادیار دانشکده کامپیوتر دانشگاه علم‌و‌صنعت ایران
+								</span>
+								<br/>
+								<span dir="RTL">
+متخصص در هوش مصنوعی و پردازش تکاملی
+								</span>
+							</p>
+						</td>
+
+						<td style="padding-left:2.5%;">
+							<p align="right" dir="RTL"> </p>
+							<img src="DrRahmani2.jpg" style="width:100%;height:auto;">
+							</img>
+						</td>
+					</tr>
+					<tr>
+						<td  class="tbc">
+							<p align="right" dir="RTL" >
+								<span dir="RTL" style="color:#ffffff;font-size: 20px;">
+دکتر محمد خوانساری
+								</span>
+								<br/>
+								<span dir="RTL">
+عضو هیات علمی دانشکده علوم و فنون نوین دانشگاه تهران
+								</span>
+								<br/>
+								<span dir="RTL">
+متخصص در پردازش تصویر
+								</span>
+							</p>
+						</td>
+
+						<td  style="padding-left:2.5%;">
+							<p align="right" dir="RTL"> </p>
+							<img src="Drkhansari.jpg" style="width:100%;height:auto;">
+							</img>
+						</td>
+					</tr>
+					<tr>
+						<td  class="tbc">
+							<p align="right" dir="RTL">
+								<span dir="RTL" style="color:#ffffff;font-size: 20px;">
+مهندس میثم احمدی
+								</span>
+								<br/>
+								<span dir="RTL">
+محقق در زمینه سیستم های پیچیده و آشوب
+								</span>
+								<br/>
+								<span dir="RTL">
+از پیشگامان توسعه پایتون در دانشگاه های ایران
+								</span>
+							</p>
+						</td>
+
+						<td  style="padding-left:2.5%;">
+							<p align="right" dir="RTL"> </p>
+							<img src="DrAhmadi2.jpg" style="width:100%;height:auto;">
+							</img>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+                </div>
+        </div>
+
+        <div class="section-box">
+            <header class="orange" id="time-data">
+                <h3>زمانبندی</h3>
+                <h4>آخرین زمان ارسال مطالب :‌ ۷ آبان‌ماه</h4>
+                <h4>زمان اعلام نتایج داوری : ۹ آبان‌ماه</h4>
+                <h4>زمان شروع کنفرانس : جمعه ۱۰ آبان‌ماه ساعت ۱۰ صبح</h4>
+                <h4>اختتامیه : جمعه ۱۰ آبان ساعت ۴ بعدازظهر :)</h4>                                                
+            </header>
+            <div class="background speaker-2">
+                <div class="description">
+                    <h5>برنامه‌ها</h5>
+                    <p>
+			تیم برگزار کننده تمام تلاش خود را کرده تا برنامه‌های متفاوتی را برای شرکت کنندگان در نظر بگیرد.
+			برنامه‌ها شامل ارایه‌ی اصول پایتون و مباحث پیشرفته، انجام مسابقه، برگزاری کارگاه‌های آموزشی و ...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section-box">
+            <header class="purple" id="place-data">
+                <h3>زمان و مکان </h3>
+                <h4>سالن همایش ‌های امام‌خمینی دانشگاه علم و صنعت در روز جمعه ۱۰ ابان ماه از ساعت ۱۰ صبح تا ۵ عصر به صرف پایتون و دوستی</h4>
+            </header>
+            <div class="background speaker-3">
+                <div class="description">
+                    <h5>
+                        زمان و مکان 
+                    </h5>
+                    <p>
+مکان کنفرانس دانشگاه علم و صنعت ایران است. حتما پیدا کردن یک دانشگاه به 
+این بزرگی نباید کار سختی باشد ولی باز هم این باعث نمی شود که ما نقشه‌ی 
+دانشگاه را برای شما تدارک ندیده باشیم:)  
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <header class="teal" id="map-data">
+                <h3>نقشه </h3>
+            </header>
+            <div class="background panel-1" dir="ltr" style="padding-top:50px;padding-bottom:50px;padding-right:50px;padding-left:50px;">
+		<iframe style="width:800px;height:400px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Iran+University+of+Science+and+Technology,+Daneshgah,+Tehr%C4%81n,+Tehran,+Iran&amp;aq=0&amp;oq=iran+university+of+science&amp;sll=37.6,-95.665&amp;sspn=51.813461,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=35.742474,51.50231&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe>
+            <p class="larger tbc" style="color:#DBDBDB;">
+آدرس دقیق دانشگاه: تهران، میدان رسالت، خیابان هنگام، خیابان دانشگاه، 
+دانشگاه علم و صنعت ایران، سالن همایش های امام خمینی
+            </p>
+            </div>
+
+        </div>
+
+        <div class="section-box">
+            <header class="gray" id="test-data">
+                <h3>حامیان </h3>
+            </header>
+            <div class="background panel-2">
+                <div class="description panel">
+                    <h3>
+                       حامیان
+                    </h3>
+                    <p class="larger">
+انجمن علمی دانشکده کامپیوتر دانشگاه علم و صنعت
+<br/>
+شرکت پارس پویش
+<br/>
+شرکت پخش کتاب ترنج
+<br/>
+شرکت سیوس
+<br/>
+پیشگامان متن باز
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    </div>
+
+</div>
+
+
+ 
+
+</body>
+</html>
+<style type="text/css">body#pycon-page { margin-top:0;opacity: 1; }</style>
+

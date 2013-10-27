@@ -1,0 +1,446 @@
+@font-face{font-family:'Yekan';src:url('font/byekan.eot');src:url('font/byekan.eot#iefix') format('eot'),url('font/byekan.woff') format('woff'),url('font/byekan.ttf') format('truetype');font-weight:normal;font-style:normal;}
+
+body#pycon-page {
+	font-family:Yekan, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background:#195471, #7abdbd;
+	background-attachment:fixed;
+	-webkit-font-smoothing:antialiased;
+text-align: right;
+  background: #536679;
+  transition:margin 700ms , opacity 600ms;
+  -webkit-transition:margin 700ms , opacity 600ms;
+  -moz-transition:margin 700ms , opacity 600ms;
+  margin-top: -40px;
+  opacity: 0.0;
+  font-family: 'Yekan' ,Helvetica;
+  direction: rtl;
+}
+p{  font-family: 'Yekan' ,Helvetica;
+  direction: rtl;}
+
+body#pycon-page * {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body#pycon-page .top-bar {
+	color:#8ca2b8;
+	background:#536679;
+	width:100%;
+	max-width:1278px;
+	height:40px;
+	line-height:40px;
+	font-family:"Dosis", "Helvetica Neue", Arial, sans-serif;
+	font-size:13px;
+	font-weight:600;
+	letter-spacing:1px;
+	padding-right:40px;
+	overflow:hidden;
+	text-transform:uppercase;
+}
+
+body#pycon-page .top-bar .attribution {
+	float:left;
+}
+
+
+body#pycon-page .top-bar .share {
+	position:relative;
+	float:left;
+	width:120px;
+	height:40px;
+}
+
+
+body#pycon-page .top-bar .share .social-icons {
+	background:url(social-icons.png);
+	width:40px;
+	height:80px;
+	margin-top:-40px;
+	z-index:3;
+	-webkit-transition:all .15s ease-in-out;
+	-moz-transition:all .15s ease-in-out;
+	-ms-transition:all .15s ease-in-out;
+	-o-transition:all .15s ease-in-out;
+	transition:all .15s ease-in-out;
+	float:left;
+}
+
+body#pycon-page .top-bar .share .social-icons.twitter {
+	background-position:0 0;
+}
+
+body#pycon-page .top-bar .share .social-icons.facebook {
+	background-position:-40px 0;
+}
+
+body#pycon-page .top-bar .share .social-icons.google {
+	background-position:-80px 0;
+}
+
+body#pycon-page .top-bar .share .social-icons:hover {
+	cursor:pointer;
+	-webkit-transform:translate3d(0, 40px, 0);
+	-moz-transform:translate3d(0, 40px, 0);
+	-ms-transform:translate3d(0, 40px, 0);
+	-o-transform:translate3d(0, 40px, 0);
+	transform:translate3d(0, 40px, 0);
+}
+
+body#pycon-page .wrapper {
+	max-width:1210px;
+	margin:0 auto;
+}
+
+body#pycon-page .sidebar {
+	width:310px;
+	min-height:4200px;
+	background:white;
+	float:right;
+	top:0;
+	
+}
+
+body#pycon-page .sidebar.fixed {
+	position:fixed;
+	margin-left: 900px;
+}
+
+body#pycon-page .sidebar .logo {
+height: 265px;
+text-align: center;
+padding-top: 17px;
+}
+
+body#pycon-page .sidebar .logo h1 {
+	text-transform:uppercase;
+	padding-top:10px;
+	color:#a7b2cc;
+	font-size:10px;
+	font-weight:600;
+	font-family:"Dosis", "Helvetica Neue", Arial, sans-serif;
+	letter-spacing:1px;
+}
+
+body#pycon-page .sidebar .video-links {
+	text-transform:uppercase;
+}
+
+body#pycon-page .sidebar .video-links .link {
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	-o-transition:all .2s;
+	transition:all .2s;
+	height:64px;
+	color:#6e7c89;
+	line-height:25px;
+	background:#fff;
+	position:relative;
+	display:block;
+	text-decoration:none;
+}
+
+body#pycon-page .sidebar .video-links .link h3 {
+	font-family:"Yekan", "Helvetica Neue", Arial, sans-serif;
+	color:inherit;
+	letter-spacing:0px;
+	font-weight:600;
+	font-size:20px;
+	border-top:1px solid #e0e8f5;
+	padding-top:20px;
+	padding-right:30px;
+}
+
+body#pycon-page .sidebar .video-links .link .bar {
+	width:5px;
+	height:100%;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+body#pycon-page .sidebar .video-links .link:last-child {
+	border-bottom:1px solid #e0e8f5;
+}
+
+body#pycon-page .sidebar .video-links .link:hover {
+	color:white;
+	cursor:pointer;
+}
+
+body#pycon-page .sidebar .video-links .link.blue .bar, body#pycon-page .sidebar .video-links .link.blue:hover {
+	background:#00a8e1;
+}
+
+body#pycon-page .sidebar .video-links .link.blue .bar h3, body#pycon-page .sidebar .video-links .link.blue:hover h3 {
+	border-top:1px solid #00a8e1;
+}
+body#pycon-page .sidebar .video-links .link.red .bar, body#pycon-page .sidebar .video-links .link.red:hover {
+	background:#E60000;
+}
+
+body#pycon-page .sidebar .video-links .link.red .bar h3, body#pycon-page .sidebar .video-links .link.red:hover h3 {
+	border-top:1px solid #E60000;
+}
+body#pycon-page .sidebar .video-links .link.green .bar, body#pycon-page .sidebar .video-links .link.green:hover {
+	background:#53CF29;
+}
+
+body#pycon-page .sidebar .video-links .link.green .bar h3, body#pycon-page .sidebar .video-links .link.green:hover h3 {
+	border-top:1px solid #53CF29;
+}
+body#pycon-page .sidebar .video-links .link.orange .bar, body#pycon-page .sidebar .video-links .link.orange:hover {
+	background:#fda634;
+}
+
+body#pycon-page .sidebar .video-links .link.orange .bar h3, body#pycon-page .sidebar .video-links .link.orange:hover h3 {
+	border-top:1px solid #fda634;
+}
+
+body#pycon-page .sidebar .video-links .link.purple .bar, body#pycon-page .sidebar .video-links .link.purple:hover {
+	background:#8e6cd0;
+}
+
+body#pycon-page .sidebar .video-links .link.purple .bar h3, body#pycon-page .sidebar .video-links .link.purple:hover h3 {
+	border-top:1px solid #8e6cd0;
+}
+
+body#pycon-page .sidebar .video-links .link.teal .bar, body#pycon-page .sidebar .video-links .link.teal:hover {
+	background:#26c7df;
+}
+
+body#pycon-page .sidebar .video-links .link.teal .bar h3, body#pycon-page .sidebar .video-links .link.teal:hover h3 {
+	border-top:1px solid #26c7df;
+}
+
+body#pycon-page .sidebar .video-links .link.gray .bar, body#pycon-page .sidebar .video-links .link.gray:hover {
+	background:#86a3c0;
+}
+
+body#pycon-page .sidebar .video-links .link.gray .bar h3, body#pycon-page .sidebar .video-links .link.gray:hover h3 {
+	border-top:1px solid #86a3c0;
+}
+
+body#pycon-page .sidebar .video-links .link.pumpkin .bar, body#pycon-page .sidebar .video-links .link.pumpkin:hover {
+	background:#e97536;
+}
+
+body#pycon-page .sidebar .video-links .link.pumpkin .bar h3, body#pycon-page .sidebar .video-links .link.pumpkin:hover h3 {
+	border-top:1px solid #e97536;
+}
+
+body#pycon-page .content {
+	margin-right:310px;
+	width: 900px;
+}
+
+body#pycon-page .content .main {
+	background:white;
+	border-right:1px solid #e0e8f5;
+	padding:80px 70px 60px;
+}
+
+body#pycon-page .content .main h2 {
+	color:#6e7c89;
+	font-family:"Yekan", "Helvetica Neue", Arial, sans-serif;
+	font-weight:400;
+	font-size:33px;
+	text-transform:uppercase;
+	letter-spacing:0px;
+	margin-bottom:30px;
+}
+
+body#pycon-page .content .main p {
+	color:#8999a9;
+	font-size:18px;
+	line-height:24px;
+}
+
+body#pycon-page .section-box header {
+	color:white;
+	text-align:center;
+	font-family:"Yekan", "Helvetica Neue", Arial, sans-serif;
+	text-transform:uppercase;
+	padding-top:55px;
+	height:204px;
+}
+
+body#pycon-page .section-box header h3 {
+	font-size: 35px;
+font-weight: 700;
+letter-spacing: 1px;
+line-height: 43px;
+margin-bottom: 14px;
+}
+
+body#pycon-page .section-box header h4 {
+	font-size: 20px;
+font-weight: 100;
+letter-spacing: 0px;
+font-family: 'Yekan';
+}
+
+body#pycon-page .section-box header.blue {
+	background:#00a8e1;
+}
+body#pycon-page .section-box header.green {
+	background:#53CF29;
+}
+body#pycon-page .section-box header.orange {
+	background:#fda634;
+}
+
+body#pycon-page .section-box header.purple {
+	background:#8e6cd0;
+}
+
+body#pycon-page .section-box header.teal {
+	background:#26c7df;
+}
+
+body#pycon-page .section-box header.gray {
+	background:#86a3c0;
+}
+
+body#pycon-page .section-box header.pumpkin {
+	background:#e97536;
+}
+
+body#pycon-page .section-box .background {
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+
+
+body#pycon-page .section-box .background.speaker-1 {
+	background:url("img/speaker.png") no-repeat;
+}
+
+body#pycon-page .section-box .background.speaker-1 .video {
+	margin-top:117px;
+}
+body#pycon-page .section-box .background.commitee-1 {
+	background:#5b5b5b;
+}
+
+body#pycon-page .section-box .background.commitee-1 .video {
+	margin-top:117px;
+}
+
+body#pycon-page .section-box .background.speaker-2 {
+	background:url("img/speaker3.png") no-repeat;
+}
+
+body#pycon-page .section-box .background.speaker-2 .video {
+	margin-top:85px;
+}
+
+body#pycon-page .section-box .background.speaker-3 {
+	background:url("img/speaker2.png") no-repeat;
+}
+
+body#pycon-page .section-box .background.speaker-3 .video {
+	margin-top:88px;
+}
+
+body#pycon-page .section-box .background.panel-1 {
+	background:url("img/group1.png") no-repeat;
+}
+
+body#pycon-page .section-box .background.panel-1 .video {
+	margin-top:154px;
+}
+
+body#pycon-page .section-box .background.panel-2 {
+	background:url("img/group2.png") no-repeat;
+}
+
+body#pycon-page .section-box .background.panel-2 .video {
+	margin-top:168px;
+}
+
+body#pycon-page .section-box .background.panel-3 {
+	background:url("img/group3.png") no-repeat;
+	max-height: 700px;
+}
+
+body#pycon-page .section-box .background.panel-3 .video {
+	margin-top:141px;
+}
+
+body#pycon-page .section-box .description {
+	color:white;
+	width:400px;
+	padding:110px 39px 85px 70px;
+	float:left;
+}
+
+body#pycon-page .section-box .description h5 {
+	font-family:"Yekan", "Helvetica Neue", Arial, sans-serif;
+	font-weight:800;
+	font-size:19px;
+	text-transform:uppercase;
+	line-height:25px;
+	letter-spacing:0px;
+}
+
+body#pycon-page .section-box .description h5 em {
+	color:#26c7df;
+	font-weight:700;
+}
+
+body#pycon-page .section-box .description p {
+	font-family: "Yekan", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 24px;
+	opacity: .7;
+}
+body#pycon-page  .tbc
+{
+	padding-right:2.5%;
+}
+body#pycon-page  .tbc p {
+	font-family: "Yekan", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 24px;
+	color:#DBDBDB;
+
+}
+
+body#pycon-page .section-box .description.panel h5 {
+	font-size:12px;
+	font-weight:600;
+}
+
+body#pycon-page .section-box .description.panel p {
+	font-size:14px;
+	line-height:24px;
+}
+
+body#pycon-page .section-box .video {
+	float:left;
+}
+
+body#pycon-page .section-box .video>iframe {
+	border:1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+::selection {
+	background: #f3e2b5;
+	}
+::-moz-selection {
+	background: #f3e2b5; 
+}
+
+
